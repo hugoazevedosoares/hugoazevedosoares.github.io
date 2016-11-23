@@ -1,13 +1,13 @@
 $('document').ready(function() {
-  $('.box').fadeIn(2000);
+  //$('.box').fadeIn(2000);
 
-/*  $('#name').animate({opacity:1},900, function() {
+$('#name').animate({opacity:1},900, function() {
     showStudent();
   });  
   $('#contact').animate({opacity:1},900, function() {
     showCell();
   });
-  */  
+  
 });
 
 var showCell = function() {
