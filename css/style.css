@@ -22,6 +22,8 @@ a {
 }
 
 span {
+    /* opacity = 1  fades all page in*/
+    /* opacity = 0  fades text by text in*/
     opacity: 0;
 }
 
@@ -52,3 +54,4 @@ arrow-down {
   vertical-align: middle;
   align-content: center;
 }
+
