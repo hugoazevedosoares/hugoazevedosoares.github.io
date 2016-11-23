@@ -1,13 +1,13 @@
 $('document').ready(function() {
-  //  $('.box').fadeIn(2000);
-  //$(this).find("span").animate({opacity:1},2000);
-  //$(this).getElementById('cell').animate({opacity:1},2000);
-  $('#name').animate({opacity:1},900, function() {
+  $('.box').fadeIn(2000);
+
+/*  $('#name').animate({opacity:1},900, function() {
     showStudent();
   });  
   $('#contact').animate({opacity:1},900, function() {
     showCell();
-  });  
+  });
+  */  
 });
 
 var showCell = function() {
