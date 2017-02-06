@@ -58,16 +58,3 @@ img {
 #contact {
     font-size: 4vh;
 }
-
-arrow-down { 
-  position: static;
-  width: 0; 
-  height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;  
-  border-top: 20px solid black;
-  margin: auto;
-  vertical-align: middle;
-  align-content: center;
-}
-
