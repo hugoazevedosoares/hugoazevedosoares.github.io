@@ -19,6 +19,9 @@ var showStudent = function() {
     }, time, function() {
         showJob();
     });
+    $('#student i').animate({
+        opacity: 1
+    }, time);
 }
 
 var showJob = function() {
@@ -27,6 +30,9 @@ var showJob = function() {
     }, time, function() {
         showHobby();
     });
+    $('#job i').animate({
+        opacity: 1
+    }, time);
 }
 
 var showHobby = function() {
@@ -35,6 +41,9 @@ var showHobby = function() {
     }, time, function() {
         showContact();
     });
+    $('#hobby i').animate({
+        opacity: 1
+    }, time);
 }
 
 var showContact = function() {
