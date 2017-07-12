@@ -1,0 +1,90 @@
+html {
+    font-size: 67.5%;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 2.9vh;
+    font-weight: normal;
+    color: black;
+    background: -webkit-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    background: -o-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    background: -moz-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    vertical-align: middle;
+}
+
+.row {
+    margin: auto;
+}
+
+.container {
+    margin: auto;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+p {
+    font: inherit;
+    margin: auto;
+    vertical-align: middle;
+}
+
+#main {
+    margin: auto;
+}
+
+a {
+    font: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    font-size: 102%;
+    text-decoration: none !important;
+    color: inherit;
+}
+
+span, span i {
+    /* opacity = 1  fades all page in*/
+    /* opacity = 0  fades text by text in*/
+    opacity: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    vertical-align: middle;
+}
+
+#contact span, #contact span i {
+    opacity: 1;
+}
+
+#name {
+    font-size: 4.9vh;
+}
+
+.contact {
+    font-size: 4vh;
+}
