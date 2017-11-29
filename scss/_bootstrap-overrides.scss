@@ -1,0 +1,31 @@
+.bg-primary {
+  @include bg-gradient
+}
+
+.text-primary {
+  color: $primary !important;
+  @include text-gradient();
+}
+
+a {
+  color: $primary;
+  @include text-gradient;
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($primary, 15%);
+    @include text-gradient('dark');
+  }
+}
+
+li a.nav-link {
+  color: $primary;
+  background: none;
+  -webkit-text-fill-color: unset;
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($primary, 15%);
+    -webkit-text-fill-color: unset;
+  }
+}
