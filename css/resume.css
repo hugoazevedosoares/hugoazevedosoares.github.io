@@ -38,11 +38,16 @@ h2 {
   font-size: 1.35rem; }
 
 .list-social-icons a {
-  color: #495057; }
-  .list-social-icons a:hover {
-    color: #BD5D38; }
+  color: #868e96; }
   .list-social-icons a .fa-lg {
     font-size: 1.75rem; }
+    .list-social-icons a .fa-lg:hover .fa-circle {
+      background: -webkit-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+      background: -o-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+      background: -moz-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+      background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
 
 .list-icons {
   font-size: 3rem; }
@@ -124,7 +129,7 @@ section.resume-section {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-a {
+.subheading > a {
   color: #BD5D38;
   background: -webkit-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
   background: -o-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
@@ -132,7 +137,7 @@ a {
   background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
-  a:hover, a:focus, a:active {
+  .subheading > a:hover, .subheading > a:focus, .subheading > a:active {
     color: #824027;
     background: -webkit-linear-gradient(45deg, #fd1f4f 30%, #ff5c07 90%);
     background: -o-linear-gradient(45deg, #fd1f4f 30%, #ff5c07 90%);
@@ -140,11 +145,3 @@ a {
     background: linear-gradient(45deg, #fd1f4f 30%, #ff5c07 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-
-li a.nav-link {
-  color: #BD5D38;
-  background: none;
-  -webkit-text-fill-color: unset; }
-  li a.nav-link:hover, li a.nav-link:focus, li a.nav-link:active {
-    color: #824027;
-    -webkit-text-fill-color: unset; }
