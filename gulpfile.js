@@ -1,22 +1,10 @@
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var browserSync = require("browser-sync").create();
-var header = require("gulp-header");
 var cleanCSS = require("gulp-clean-css");
 var rename = require("gulp-rename");
 var uglify = require("gulp-uglify");
 var pkg = require("./package.json");
-
-// Set the banner content
-var banner = [
-  "/*!\n",
-  " * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n",
-  " * Copyright 2013-" + new Date().getFullYear(),
-  " <%= pkg.author %>\n",
-  " * Licensed under <%= pkg.license %> (https://github.com/BlackrockDigital/<%= pkg.name %>/blob/master/LICENSE)\n",
-  " */\n",
-  ""
-].join("");
 
 function showError(error) {
   console.log(error.toString());
@@ -28,11 +16,6 @@ gulp.task("sass", function() {
   return gulp
     .src("scss/resume.scss")
     .pipe(sass().on("error", showError))
-    .pipe(
-      header(banner, {
-        pkg: pkg
-      })
-    )
     .pipe(gulp.dest("css"))
     .pipe(
       browserSync.reload({
@@ -68,11 +51,6 @@ gulp.task("minify-js", function() {
   return gulp
     .src("js/resume.js")
     .pipe(uglify())
-    .pipe(
-      header(banner, {
-        pkg: pkg
-      })
-    )
     .pipe(
       rename({
         suffix: ".min"
