@@ -16,18 +16,20 @@
 }
 
 @mixin bg-gradient($dark: 'light') {
-    $value: 15%;
+    $percent: 15%;
+    $light_grad: 45deg, $first-grad-color 30%, $second-grad-color 90%;
+    $dark_grad: 45deg, darken($first-grad-colo, $percent) 30%, darken($second-grad-color, $percent) 90%;
     @if ($dark=='dark') {
-        background: -webkit-linear-gradient(45deg, darken(#FE6B8B, $value) 30%, darken(#FF8E53, $value) 90%);
-        background: -o-linear-gradient(45deg, darken(#FE6B8B, $value) 30%, darken(#FF8E53, $value) 90%);
-        background: -moz-linear-gradient(45deg, darken(#FE6B8B, $value) 30%, darken(#FF8E53, $value) 90%);
-        background: linear-gradient(45deg, darken(#FE6B8B, $value) 30%, darken(#FF8E53, $value) 90%);
+        background: -webkit-linear-gradient($dark_grad);
+        background: -o-linear-gradient($dark_grad);
+        background: -moz-linear-gradient($dark_grad);
+        background: linear-gradient($dark_grad);
     }
     @else {
-        background: -webkit-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
-        background: -o-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
-        background: -moz-linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
-        background: linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%);
+        background: -webkit-linear-gradient($light_grad);
+        background: -o-linear-gradient($light_grad);
+        background: -moz-linear-gradient($light_grad);
+        background: linear-gradient($light_grad);
     }
 }
 
